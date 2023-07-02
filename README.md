@@ -1,1 +1,4 @@
-# Randomly-Generate-Password
+# Random-Password-Generate
+## Description
+## Technology uses
+## Deployed Application Link
