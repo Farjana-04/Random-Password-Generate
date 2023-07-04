@@ -57,10 +57,9 @@ function generatePassword() {
         
     };
 
-    //  if  options
+    //  if option select the character type
     if (!Symbols && !Number && !Uppercase && !Lowercase) {
          alert("You must choose a criteria!");
-
     }
     
      if (Symbols) {
@@ -89,7 +88,6 @@ function generatePassword() {
     }
     // This joins the password array and converts it to a string
     var passwordText = password.join("");
-    // UserInput(passwordText);
     return passwordText;
 }
  
