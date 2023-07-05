@@ -76,6 +76,7 @@ function generatePassword() {
 	userChoices = userChoices.concat(uppercase);
     };
     console.log(userChoices);
+    
     // password variable is an array placeholder for user generated amount of length
     var password = [];
 
