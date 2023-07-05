@@ -1,5 +1,5 @@
+// Assignment Code
 
-  // Start Assignment Code
 //  Declare the variables: 
 var Uppercase;
 var Lowercase;
@@ -12,7 +12,7 @@ var userChoices = []; // user Choices declared outside the if statement so they 
 // Special symbols 
  var symbol = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 // Numeric characters
-var number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var number = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Alphabetical characters
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // Space is for the Uppercase conversion
@@ -24,8 +24,8 @@ var toUpper = function (x) {
 // creates a variable for uppercase conversion
 var uppercase = alphabet.map(toUpper);
 
+// Add event listener to generate button, and function input to use textcontent
 var generateBtn = document.querySelector("#generate");
-
 generateBtn.addEventListener("click", function () {
     passwordText = generatePassword();
     document.getElementById("password").placeholder = passwordText;
@@ -57,9 +57,9 @@ function generatePassword() {
         
     };
 
-    //  if option select the character type
+    //  if option evaluate independently of the previous one
     if (!Symbols && !Number && !Uppercase && !Lowercase) {
-         alert("You must choose a criteria!");
+        alert("You must choose a criteria!");
     }
     
      if (Symbols) {
@@ -79,12 +79,11 @@ function generatePassword() {
     // password variable is an array placeholder for user generated amount of length
     var password = [];
 
-    // Start random selection variables:
-    // Random selection for all variables: 
+     // Random selection for all variables: 
     for (var i = 0; i < enterPassword; i++) {
         var pickChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
         password.push(pickChoices);
-		// console.log(userChoices);
+		
     }
     // This joins the password array and converts it to a string
     var passwordText = password.join("");
