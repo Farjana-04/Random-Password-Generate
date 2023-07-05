@@ -5,13 +5,13 @@ Created an application that an employee can use to generate a random password ba
 
 ![password generator](https://github.com/Farjana-04/Random-Password-Generate/assets/92415181/86f1bb91-b4b6-4840-ace1-3ad320f29db6)
 
-User Story:
+## User Story:
 
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 
-Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
