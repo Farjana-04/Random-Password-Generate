@@ -6,7 +6,7 @@ var Lowercase;
 var enterPassword;
 var Number;
 var Symbols;
-var userChoices = []; // user Choices declared outside the if statement so they can be concatenated upon condition
+// var userChoices = []; // user Choices declared outside the if statement so they can be concatenated upon condition
 
 // Start Password variable values: 
 // Special symbols 
@@ -33,6 +33,7 @@ generateBtn.addEventListener("click", function () {
 
 // Start function to generate password
 function generatePassword() {
+    var userChoices = []; // user Choices declared upon condition
     // Asks for user input
     enterPassword = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 	
@@ -41,7 +42,8 @@ function generatePassword() {
         alert("You must choose a value");
     } else if (enterPassword < 8 || enterPassword > 128) {
         
-		 enterPassword = prompt("You must choose between 8 and 128");
+		 enterPassword = alert("You must choose between 8 and 128");  // replaced alert instead of prompt
+         generatePassword()
 		 console.log("Password length " + enterPassword);
 
     } else {
