@@ -15,6 +15,7 @@ Created an application that an employee can use to generate a random password ba
 - [Email](#email)
 
 ## Usage
+Follow the repository instructions.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
