@@ -6,7 +6,7 @@
 // var enterPassword;
 // var Number;
 // var Symbols;
-// var userChoices = []; // user Choices declared outside the if statement so they can be concatenated upon condition
+// var userChoices = []; // user Choices declared outside the if statement 
 
 // Start Password variable values: 
 // Special symbols 
