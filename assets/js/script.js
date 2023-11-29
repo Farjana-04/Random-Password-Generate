@@ -33,7 +33,7 @@ generateBtn.addEventListener("click", function () {
 
 // Start function to generate password
 function generatePassword() {
-    // var userChoices = [];
+    var userChoices = [];
     var Uppercase;
     var Lowercase;
     var enterPassword;
